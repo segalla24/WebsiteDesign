@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<title>Stars Hollow</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+ background-image: url("map_img.jpg");
+  min-height: 90%;
+}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-hide-small">
+  <div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+<img src="photoshopb_img.jpg" style="width:10%"class="w3-display-right w3-center">
+    <a href="home.HTML" class="w3-bar-item w3-button">HOME</a>
+    <a href="todo.HTML" class="w3-bar-item w3-button">TO-DO</a>
+    <a href="about.HTML" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="contact.HTML" class="w3-bar-item w3-button">CONTACT</a>
+<div align="center">
+ <marquee behavior="alternate" bgcolor="#000000" direction="left" height:="" 
+ loop="7" scrollamount="1" scrolldelay="2" width="100%">
+ <span style="font-size: 30px;color:#FFFFFF">
+ Date/Time: <span id="datetime"></span>
+<script>
+var dt = new Date();
+document.getElementById("datetime").innerHTML = dt.toLocaleString();
+</script></span></marquee>
+</div>
+
+  </div>
+</div>
+
+  
+<!-- Menu Container -->
+<div class="w3-container w3-padding-64 w3-cyan w3-grayscale w3-xxlarge" id="to-do">
+  <div class="w3-content">
+<p></p>
+    <h1 class="w3-center w3-jumbo" style="margin-bottom:64px">To-do</h1>
+    <div class="w3-row w3-center w3-border w3-border-dark-grey">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Attractions');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-grey">Attractions</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Events');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-grey">Events</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Dining');">
+        <div class="w3-col s4 tablink w3-padding-large w3-hover-grey">Dining</div>
+      </a>
+    </div>
+
+    <div id="Attractions" class="w3-container menu w3-padding-32 w3-cyan">
+      <h1><b>Churchogouge</b> (Church-O-Gouge)</h1>
+      <p class="w3-text-black">a shared house of worship where both Christian and Jewish services are held.</p>
+      <hr>
+   
+      <h1><b><a href="https://gilmoregirls.fandom.com/wiki/Doose%27s_Market">Doose's Market</b></a></h1>
+      <p class="w3-text-black">The main market/grocery store in Stars Hallow runned by local, Taylor Doose.</p>
+      <hr>
+      
+      <h1><b><a href="https://gilmoregirls.fandom.com/wiki/Miss_Patty%27s_School_of_Ballet">Miss Patty's</b></a></h1>
+      <p class="w3-text-black">A dance school runned by Stars Hollows, Mrs. Patty, it is also the venue for several fundraisers/events and Town Meetings.</p>
+      <hr>
+
+      <h1><b><a href="https://gilmoregirls.fandom.com/wiki/Dragonfly_Inn">The Dragonfly Inn</b></a></h1>
+      <p class="w3-text-black">Formerly a bed-and-breakfast owned by the Weston's and purchased by Loreli Gilmore (executive manager) and Sookie St. James (head chef). A wonderful place to stay with a fantasic dining services, along with activities for the whole family to enjoy any time of year.</p>
+      <hr>
+
+      <h1><b><a href="https://gilmoregirls.fandom.com/wiki/Stars_Hollow_History_Museum">Stars Hollow Museum</b></a></h1>
+      <p class="w3-text-black">This is a community runned  museum that displays historical artifact of the towns history.</p>
+      <hr>
+
+      <h1><b><a href="https://gilmoregirls.fandom.com/wiki/Town_Square">The Gazebo</b></a></h1>
+      <p class="w3-text-black">The center of Stars Hollow is located right under the town's gazebo. If you are walking around town and you take 3 lefts you will be right back at the center of town.</p>
+    </div>
+
+    <div id="Events" class="w3-container menu w3-padding-32 w3-cyan">
+      <h1><b>Edgar Allen Poe Society</b> </h1>
+      <p class="w3-text-black">This annual event is one of stars hollows biggest litterary tourism events. Men come to stars hollow and dress up as Edgar Allen Poe and recite and renact his poems. </p>
+      <hr>
+   
+      <h1><b> Firelight Festival</b></h1>
+      <p class="w3-text-black">Every late winter and early spring,the town comes together to celebrate The Firelight Festival celebrating the founding of our beloved town, Stars Hollow.</p>
+      <hr>
+      
+      <h1><b>Movie in the square</b> </h1>
+      <p class="w3-text-black">One a month the town hosts a movie in the square which is held in the town square, and the movie is chosen by the citizen of the month.</p>
+      <hr>
+
+      <h1><b>Revolutionary War Reenactments</b> </h1>
+      <p class="w3-text-black">Every year the Stars Hollow Historical Society comes together and reenacts the battle of how stars Hollow came to be. this event is fun for families and kids of all ages.</p>
+    </div>
+
+
+    <div id="Dining" class="w3-container menu w3-padding-32 w3-cyan">
+      <h1><b><a href=https://gilmoregirls.fandom.com/wiki/Al%27s_Pancake_World>Al's Pancake World</b></a></h1>
+ <p class="w3-text-black">A restaurant in Stars Hollow, that used t be a pancake house, but now serves international cousine.</p>
+      <hr>
+   
+      <h1><b><a href=https://gilmoregirls.fandom.com/wiki/Luke%27s_Diner>Luke's Diner</b> <span class="w3-tag w3-grey w3-round">Town Favorite</span></a></h1>
+      <p class="w3-text-black">Owned and run by Stars Hollow local, Luke Danes.This diner is open for breakfast, lunch, dinner and is very old fashioned and makes you feel right at home. There is only one rule to follow which is, No phones allowed.</p>
+      <hr>
+      
+      <h1><b><a href=https://gilmoregirls.fandom.com/wiki/Taylor%27s_Olde_Fashioned_Soda_Shoppe>Taylor's Old Fashioned Soda Shoppe</b></a></h1>
+      <p class="w3-text-black">Here you can find all the candy, milkshakes, hot chocolate, and ice cream soda of all flavors you could possibly imagine. This buiseness is owned by Stars Hollows own, Taylor Doose. </p>
+      <hr>
+      
+      <h1><b><a href=https://gilmoregirls.fandom.com/wiki/Weston%27s_Bakery>Weston's Bakery</b></a></h1>
+      <p class="w3-text-black">This business was orgionally established in 1955 by Fran Weston. This is Stars Hollows local bakery that serves over 32 types of pies, cakes, scones, muffins, coffee, tea, and hot chocolate. </p>
+    </div><br>
+
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-48 w3-xxlarge">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+<audio id="myAudio" controls loop>
+<source src="ggtheme.ogg" type="audio/ogg">
+  <source src="ggtheme.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio><br>
+
+<button onclick="enableAutoplay()" type="button">Enable autoplay</button>
+<button onclick="disableAutoplay()" type="button">Disable autoplay</button>
+
+<script>
+var x = document.getElementById("myAudio");
+
+function enableAutoplay() { 
+  x.autoplay = true;
+  x.load();
+}
+ 
+function disableAutoplay() { 
+  x.autoplay = false;
+  x.load();
+} 
+  
+function checkAutoplay() { 
+  alert(x.autoplay);
+} 
+</script> 
+
+</footer>
+
+<script>
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-cyan", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-cyan";
+}
+document.getElementById("myLink").click();
+</script>
+
+</body>
+</html>
